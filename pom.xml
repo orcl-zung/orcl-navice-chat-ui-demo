@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.orcl</groupId>
+  <artifactId>orcl-naive-chat-ui</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>orcl-test-02</module>
+    <module>orcl-naive-chat-ui-02</module>
+      <module>orcl-naive-chat-ui-03</module>
+      <module>orcl-naive-chat-ui-04</module>
+  </modules>
+  <name>orcl-naive-chat-ui</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <!--
+      Explicitly declaring the source encoding eliminates the following message: [WARNING] Using platform encoding
+      (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+    -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.zenjava</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>8.8.3</version>
+        <configuration>
+          <mainClass>com.orcl.test.Application</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
