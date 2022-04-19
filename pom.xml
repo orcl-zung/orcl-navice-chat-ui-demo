@@ -14,6 +14,7 @@
       <module>orcl-naive-chat-ui-05</module>
       <module>orcl-naive-chat-ui-06</module>
     <module>orcl-naive-chat-ui-07</module>
+      <module>orcl-naive-chat-ui-08</module>
   </modules>
   <name>orcl-naive-chat-ui</name>
   <url>http://maven.apache.org</url>
